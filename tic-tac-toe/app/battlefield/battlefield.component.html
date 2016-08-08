@@ -1,0 +1,24 @@
+<div class="tic-tac-toe">
+    <div class="boxes">
+        <h2 *ngIf="!win && !draw">It's {{currentPlayerLabel}} turn !</h2>
+        <h2 *ngIf="win && !draw">Winner is {{currentPlayerLabel}}  !</h2>
+        <h2 *ngIf="draw">Draw  !</h2>
+        <div *ngFor="let box of battlefield; let i = index" class="box" (click)="clicked(i)">
+            <span class="{{box}} active" *ngIf="box!=''">{{box | uppercase}}</span>
+        </div>
+        <div class="red-line top-hor"></div>
+        <div class="red-line mid-hor"></div>
+        <div class="red-line bottom-hor"></div>
+        <div class="red-line left-vert"></div>
+        <div class="red-line mid-vert"></div>
+        <div class="red-line right-vert"></div>
+        <div class="red-line ltr-diag"></div>
+        <div class="red-line rtl-diag"></div>
+    
+        <div class="x-wins js-wins">X Wins!<span>Play Again?</span></div>
+        <div class="o-wins js-wins">O Wins!<span>Play Again?</span></div>
+    </div>
+    <div class="reset">
+        <button class="reset" (click)="startGame()">Reset</button>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+angular-heroes/typings
+angular-heroes/node_modules
+twitter-sniffer/typings
+twitter-sniffer/node_modules
+
+
+*typings/
+*nodes_modes/
+*.idea
