@@ -12,14 +12,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var BoardsComponent = (function () {
     function BoardsComponent() {
     }
     BoardsComponent = __decorate([
         core_1.Component({
             selector: 'boards',
-            templateUrl: 'app/boards/boards.component.html',
-            styleUrls: ['app/boards/boards.component.css'],
+            templateUrl: 'app/component/boards/boards.component.html',
+            styleUrls: ['app/component/boards/boards.component.css'],
+            directives: [router_1.ROUTER_DIRECTIVES],
         }), 
         __metadata('design:paramtypes', [])
     ], BoardsComponent);

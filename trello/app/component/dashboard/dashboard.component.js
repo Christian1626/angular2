@@ -1,3 +1,6 @@
+/**
+ * Created by christian on 09/08/16.
+ */
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9,21 +12,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var TrelloComponent = (function () {
-    function TrelloComponent() {
-        this.title = 'Cricri Trello Clone';
+// import { ROUTER_DIRECTIVES }  from '@angular/router';
+var DashboardComponent = (function () {
+    function DashboardComponent() {
     }
-    TrelloComponent = __decorate([
+    DashboardComponent = __decorate([
         core_1.Component({
-            selector: 'trello',
-            templateUrl: 'app/trello/trello.component.html',
-            styleUrls: ['app/trello/trello.component.css'],
-            directives: [router_1.ROUTER_DIRECTIVES]
+            selector: 'dashboard',
+            templateUrl: 'app/component/dashboard/dashboard.component.html',
+            styleUrls: ['app/component/dashboard/dashboard.component.css'],
         }), 
         __metadata('design:paramtypes', [])
-    ], TrelloComponent);
-    return TrelloComponent;
+    ], DashboardComponent);
+    return DashboardComponent;
 }());
-exports.TrelloComponent = TrelloComponent;
-//# sourceMappingURL=trello.component.js.map
+exports.DashboardComponent = DashboardComponent;
+//# sourceMappingURL=dashboard.component.js.map
