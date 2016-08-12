@@ -1,24 +1,6 @@
 <div class="board-title">
-    <span >New board</span>
-    <input class="ng-pristine ng-valid ng-touched" style="display: none;" >
+    <span [hidden]="editingBoard ? !visible: visible" (click)="editingCard()" > New board</span>
+    <input class="ng-pristine ng-valid ng-touched" [hidden]="editingBoard ? visible: !visible">
 </div>
 
-<div class="list">
-    <div class="list-header">
-        <h4 class="editingList" >list title</h4>
-        <input class="editingList" type="text" style="display: none;" />
-    </div>
-    <ul class="card-list" >
-        <li class="card">
-            card 1
-            <input class="editingCard" style="display: none;" />
-        </li>
-    </ul>
-    <div class="add-card">
-            <span class="addingCard" >
-                Add a card...
-            </span>
-
-        <input class="addingCard" style="display: none;" />
-    </div>
-</div>
+<list></list>

@@ -3,17 +3,24 @@
  */
 
 import {Component} from '@angular/core';
-import {List} from "../../entity/list";
+import {List} from "../list/list.component";
 // import { ROUTER_DIRECTIVES }  from '@angular/router';
 
 @Component({
     selector: 'dashboard',
     templateUrl: 'app/component/dashboard/dashboard.component.html',
     styleUrls: ['app/component/dashboard/dashboard.component.css'],
-    // directives: [ROUTER_DIRECTIVES],
+    directives: [List],
 })
 export class DashboardComponent  {
-    boards:Array<List>;
+    boards:Array<any>;
+    editingBoard: boolean;
+    
     constructor() {
+        this.editingBoard = false;
+    }
+    
+    editingCard() {
+        this.editingBoard = true;
     }
 }

@@ -1,6 +1,3 @@
-/**
- * Created by christian on 09/08/16.
- */
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -11,26 +8,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+/**
+ * Created by christian on 12/08/16.
+ */
 var core_1 = require('@angular/core');
-var list_component_1 = require("../list/list.component");
+var card_component_1 = require("../card/card.component");
 // import { ROUTER_DIRECTIVES }  from '@angular/router';
-var DashboardComponent = (function () {
-    function DashboardComponent() {
-        this.editingBoard = false;
+var List = (function () {
+    function List() {
+        this.editingList = false;
     }
-    DashboardComponent.prototype.editingCard = function () {
-        this.editingBoard = true;
+    List.prototype.editingList = function () {
+        this.editingList = true;
     };
-    DashboardComponent = __decorate([
+    List = __decorate([
         core_1.Component({
-            selector: 'dashboard',
-            templateUrl: 'app/component/dashboard/dashboard.component.html',
-            styleUrls: ['app/component/dashboard/dashboard.component.css'],
-            directives: [list_component_1.List],
+            selector: 'list',
+            templateUrl: 'app/component/list/list.component.html',
+            styleUrls: ['app/component/list/list.component.css'],
+            directives: [card_component_1.Card],
         }), 
         __metadata('design:paramtypes', [])
-    ], DashboardComponent);
-    return DashboardComponent;
+    ], List);
+    return List;
 }());
-exports.DashboardComponent = DashboardComponent;
-//# sourceMappingURL=dashboard.component.js.map
+exports.List = List;
+//# sourceMappingURL=list.component.js.map

@@ -1,6 +1,3 @@
-/**
- * Created by christian on 09/08/16.
- */
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -11,26 +8,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+/**
+ * Created by christian on 12/08/16.
+ */
 var core_1 = require('@angular/core');
-var list_component_1 = require("../list/list.component");
 // import { ROUTER_DIRECTIVES }  from '@angular/router';
-var DashboardComponent = (function () {
-    function DashboardComponent() {
-        this.editingBoard = false;
+var Card = (function () {
+    function Card() {
+        this.editingCard = false;
     }
-    DashboardComponent.prototype.editingCard = function () {
-        this.editingBoard = true;
+    Card.prototype.editingCard = function () {
+        this.editingCard = true;
     };
-    DashboardComponent = __decorate([
+    Card = __decorate([
         core_1.Component({
-            selector: 'dashboard',
-            templateUrl: 'app/component/dashboard/dashboard.component.html',
-            styleUrls: ['app/component/dashboard/dashboard.component.css'],
-            directives: [list_component_1.List],
+            selector: 'card',
+            templateUrl: 'app/component/card/card.component.html',
+            styleUrls: ['app/component/card/card.component.css'],
         }), 
         __metadata('design:paramtypes', [])
-    ], DashboardComponent);
-    return DashboardComponent;
+    ], Card);
+    return Card;
 }());
-exports.DashboardComponent = DashboardComponent;
-//# sourceMappingURL=dashboard.component.js.map
+exports.Card = Card;
+//# sourceMappingURL=card.component.js.map
